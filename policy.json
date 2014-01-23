@@ -1,0 +1,12 @@
+{
+  "name": "RH6.4-x86_64-small",
+  "repo": { "name": "RH6.4-x86_64" },
+  "installer": { "name": "redhat" },
+  "broker": { "name": "noop" },
+  "enabled": true,
+  "hostname": "spenell${id}.spenell.bog",
+  "root_password": "secret",
+  "max_count": "20",
+  "rule_number": "100",
+  "tags": [{ "name": "small", "rule": ["<=", ["num", ["fact", "processorcount"]], 1]}]
+}
